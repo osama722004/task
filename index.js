@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const authRoutes = require("./routes/auth");
 
 const app = express();
-const PORT = 3000;
+const PORT = 3000 || process.env.PORT;
 const MONGO_URI =
   "mongodb+srv://osamazaid821:6OTZWIVxujIf7qbn@cluster0.uiq1o.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
